@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ai.iml" filepath="$PROJECT_DIR$/.idea/ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiModel/multiModel.iml" filepath="$PROJECT_DIR$/multiModel/multiModel.iml" />
     </modules>
   </component>
 </project>

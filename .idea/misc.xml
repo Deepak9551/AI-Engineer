@@ -7,6 +7,7 @@
       <list>
         <option value="$PROJECT_DIR$/openai/pom.xml" />
         <option value="$PROJECT_DIR$/bedrock/pom.xml" />
+        <option value="$PROJECT_DIR$/multiModel/pom.xml" />
       </list>
     </option>
   </component>

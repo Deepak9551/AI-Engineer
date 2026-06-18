@@ -3,12 +3,17 @@ package com.codingshuttle.openai.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.openai.OpenAiChatModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ChatController {
 
     private final ChatClient client;
+
+
+
 
     ChatController(ChatModel chatModel) {
         this.client =  ChatClient.builder(chatModel).build();

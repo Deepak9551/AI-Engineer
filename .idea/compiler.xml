@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="openai" />
         <module name="multiModel" />
+        <module name="AdvancePromptModel" />
       </profile>
       <profile name="Annotation profile for bedrock" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -23,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AdvancePromptModel" options="-parameters" />
       <module name="bedrock" options="-parameters" />
       <module name="multiModel" options="-parameters" />
       <module name="openai" options="-parameters" />

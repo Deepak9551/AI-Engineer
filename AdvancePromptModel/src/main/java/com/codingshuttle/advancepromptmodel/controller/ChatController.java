@@ -4,6 +4,7 @@ package com.codingshuttle.advancepromptmodel.controller;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -62,6 +63,7 @@ public class ChatController {
         System.out.println("Called");
         var response = client.prompt()
                 .user(prompt)
+                .options(OpenAiChatOptions.builder().maxTokens(200).temperature(0.8))
 //                .advisors(new SimpleLoggerAdvisor())
                 .call()
                 .content();

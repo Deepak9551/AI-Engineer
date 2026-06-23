@@ -18,7 +18,7 @@ public class ChatClientConfig {
 
         //  build the Default chat option for all rest APIs
         ChatOptions.Builder chatOptions = ChatOptions.builder()
-                .maxTokens(500)
+                 .maxTokens(500)
                 .temperature(0.8);
         return chatBuilder.defaultSystem("""
                 You are a helpful assistant.
